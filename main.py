@@ -76,4 +76,3 @@ while True:
 		if currentTap & pin_bit and not lastTap & pin_bit:
 			son[i].play()
 	lastTap = currentTap
-	time.sleep(0.1)
