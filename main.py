@@ -87,10 +87,11 @@ while cont:
 		if currentTap & pin_bit and not lastTap & pin_bit:
 			son[i].play()
 	lastTap = currentTap
-	
+
 newTemps = time.time()
 temps = newTemps - lastTemps
 temps = int(temps)
 envoyer(instrument,temps)
 setRGB(0,0,0)
 setText("Debrancher")
+
