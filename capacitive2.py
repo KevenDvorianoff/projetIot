@@ -1,8 +1,3 @@
-# Based on Arduino example by Jim Lindblom
-# http://bildr.org/2011/05/mpr121_arduino/
-# And Scott Garner's conversion to Python
-# https://github.com/scottgarner/BeetBox
-# And helpful examples from Adafruit
 import time
 import RPi.GPIO as GPIO
 import smbus
