@@ -53,8 +53,8 @@ ATO_CFGT = 0x7f
 
 # Global Constants
 
-TOU_THRESH = 1000
-REL_THRESH = 1000
+TOU_THRESH = 100
+REL_THRESH = 150
 
 # Routines
 

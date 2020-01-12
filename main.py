@@ -18,23 +18,22 @@ setRGB(255,0,0)
 setText(instrument)
 
 son = [
-pygame.mixer.Sound("{}/Do.wav".format(instrument)),
-pygame.mixer.Sound("{}/Reb.wav".format(instrument)),
-pygame.mixer.Sound("{}/Re.wav".format(instrument)),
-pygame.mixer.Sound("{}/Mib.wav".format(instrument)),
-pygame.mixer.Sound("{}/Mi.wav".format(instrument)),
-pygame.mixer.Sound("{}/Fa.wav".format(instrument)),
-pygame.mixer.Sound("{}/Solb.wav".format(instrument)),
-pygame.mixer.Sound("{}/Sol.wav".format(instrument)),
-pygame.mixer.Sound("{}/Lab.wav".format(instrument)),
-pygame.mixer.Sound("{}/La.wav".format(instrument)),
-pygame.mixer.Sound("{}/Sib.wav".format(instrument)),
-pygame.mixer.Sound("{}/Si.wav".format(instrument))
+pygame.mixer.Sound("/home/pi/{}/Do.wav".format(instrument)),
+pygame.mixer.Sound("/home/pi/{}/Reb.wav".format(instrument)),
+pygame.mixer.Sound("/home/pi/{}/Re.wav".format(instrument)),
+pygame.mixer.Sound("/home/pi/{}/Mib.wav".format(instrument)),
+pygame.mixer.Sound("/home/pi/{}/Mi.wav".format(instrument)),
+pygame.mixer.Sound("/home/pi/{}/Fa.wav".format(instrument)),
+pygame.mixer.Sound("/home/pi/{}/Solb.wav".format(instrument)),
+pygame.mixer.Sound("/home/pi/{}/Sol.wav".format(instrument)),
+pygame.mixer.Sound("/home/pi/{}/Lab.wav".format(instrument)),
+pygame.mixer.Sound("/home/pi/{}/La.wav".format(instrument)),
+pygame.mixer.Sound("/home/pi/{}/Sib.wav".format(instrument)),
+pygame.mixer.Sound("/home/pi/{}/Si.wav".format(instrument))
 ]
 
 setup(0x5b)
-last_touched = readData(0x5b)
-lastTap = 0
+lastTap = readData(0x5b)
 
 cont = True
 
@@ -67,18 +66,18 @@ while cont:
 		lastTemps = newTemps
 		instrument = newInstrument
 		son = [
-		pygame.mixer.Sound("{}/Do.wav".format(instrument)),
-		pygame.mixer.Sound("{}/Reb.wav".format(instrument)),
-		pygame.mixer.Sound("{}/Re.wav".format(instrument)),
-		pygame.mixer.Sound("{}/Mib.wav".format(instrument)),
-		pygame.mixer.Sound("{}/Mi.wav".format(instrument)),
-		pygame.mixer.Sound("{}/Fa.wav".format(instrument)),
-		pygame.mixer.Sound("{}/Solb.wav".format(instrument)),
-		pygame.mixer.Sound("{}/Sol.wav".format(instrument)),
-		pygame.mixer.Sound("{}/Lab.wav".format(instrument)),
-		pygame.mixer.Sound("{}/La.wav".format(instrument)),
-		pygame.mixer.Sound("{}/Sib.wav".format(instrument)),
-		pygame.mixer.Sound("{}/Si.wav".format(instrument))
+		pygame.mixer.Sound("/home/pi/{}/Do.wav".format(instrument)),
+		pygame.mixer.Sound("/home/pi/{}/Reb.wav".format(instrument)),
+		pygame.mixer.Sound("/home/pi/{}/Re.wav".format(instrument)),
+		pygame.mixer.Sound("/home/pi/{}/Mib.wav".format(instrument)),
+		pygame.mixer.Sound("/home/pi/{}/Mi.wav".format(instrument)),
+		pygame.mixer.Sound("/home/pi/{}/Fa.wav".format(instrument)),
+		pygame.mixer.Sound("/home/pi/{}/Solb.wav".format(instrument)),
+		pygame.mixer.Sound("/home/pi/{}/Sol.wav".format(instrument)),
+		pygame.mixer.Sound("/home/pi/{}/Lab.wav".format(instrument)),
+		pygame.mixer.Sound("/home/pi/{}/La.wav".format(instrument)),
+		pygame.mixer.Sound("/home/pi/{}/Sib.wav".format(instrument)),
+		pygame.mixer.Sound("/home/pi/{}/Si.wav".format(instrument))
 		]
 	
 	currentTap = readData(0x5b)
